@@ -54,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README AUTHORS ChangeLog TODO
 %attr(755,root,root) %{_bindir}/kamix
 %{_datadir}/apps/kamix
-%{_iconsdir}/hicolor/*
+%{_iconsdir}/hicolor/*/*/*
 %{_desktopdir}/*.desktop
