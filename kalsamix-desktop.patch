@@ -1,0 +1,14 @@
+--- kamix/src/kamix.desktop~	2004-04-29 08:23:47.000000000 +0200
++++ kamix/src/kamix.desktop	2004-11-17 01:08:16.519971432 +0100
+@@ -1,7 +1,11 @@
+ [Desktop Entry]
+ Encoding=UTF-8
+ Name=kamix
++Name[pl]=kamix
+ Exec=kamix
+ Icon=kamix
+ Type=Application
+ Comment=An ALSA mixer for KDE
++Comment[pl]=Mikser ALSA dla KDE
++GenericName[pl]=Mikser ALSA dla KDE
++Categories=Qt;KDE;Audio;Mixer;
