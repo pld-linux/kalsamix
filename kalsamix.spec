@@ -29,8 +29,13 @@ jest ubogi.
 
 %build
 cp -f /usr/share/automake/config.* admin
+
 %configure \
+%if "%{_lib}" == "lib64"
+	--enable-libsuffix=64 \
+%endif
 	--disable-rpath \
+	--%{?debug:en}%{!?debug:dis}able-debug%{?debug:=full} \
 	--with-qt-libraries=%{_libdir}
 %{__make}
 
