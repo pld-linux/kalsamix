@@ -1,14 +1,15 @@
 Summary:	An ALSA mixer for KDE
 Summary(pl):	Mikser ALSA dla KDE
 Name:		kamix
-Version:	0.6.2
+Version:	0.6.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://dl.sourceforge.net/kamix/%{name}-%{version}.tar.gz
-# Source0-md5:	33b5727065dfce90e1818afe55c6e3df
+Source0:	http://dl.sourceforge.net/kamix/%{name}-%{version}.tar.bz2
+# Source0-md5:	e5d92097f921e1fa3e7b957aceca5a12
 Patch0:		%{name}-desktop.patch
 URL:		http://kamix.sourceforge.net/
+BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel
 BuildRequires:	rpmbuild(macros) >= 1.129
