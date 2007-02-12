@@ -1,5 +1,5 @@
 Summary:	An ALSA mixer for KDE
-Summary(pl):	Mikser ALSA dla KDE
+Summary(pl.UTF-8):   Mikser ALSA dla KDE
 Name:		kamix
 Version:	0.6.5
 Release:	1
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A KDE mixer application for KDE 3 and ALSA, just to provide some
 support for what official kmix lacks.
 
-%description -l pl
-Mikser d¿wiêku dla KDE 3 i ALSY, posiadaj±cy mo¿liwo¶ci, w które kmix
+%description -l pl.UTF-8
+Mikser dÅ¼wiÄ™ku dla KDE 3 i ALSY, posiadajÄ…cy moÅ¼liwoÅ›ci, w ktÃ³re kmix
 jest ubogi.
 
 %prep
