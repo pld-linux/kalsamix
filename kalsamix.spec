@@ -1,5 +1,5 @@
 Summary:	An ALSA mixer for KDE
-Summary(pl.UTF-8):   Mikser ALSA dla KDE
+Summary(pl.UTF-8):	Mikser ALSA dla KDE
 Name:		kamix
 Version:	0.6.5
 Release:	1
