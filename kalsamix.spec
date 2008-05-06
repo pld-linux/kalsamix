@@ -26,7 +26,7 @@ jest ubogi.
 
 %prep
 %setup -q -n %{name}-%{version}%{_rel}
-#%patch0 -p1
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.* admin
