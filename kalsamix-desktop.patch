@@ -1,12 +1,12 @@
---- kamix/src/kalsamix.desktop~	2004-04-29 08:23:47.000000000 +0200
-+++ kamix/src/kalsamix.desktop	2004-11-17 01:08:16.519971432 +0100
+--- kalsamix-1.0.0beta2/src/kalsamix.desktop.orig	2007-05-03 21:10:22.000000000 +0200
++++ kalsamix-1.0.0beta2/src/kalsamix.desktop	2008-05-06 16:07:11.000000000 +0200
 @@ -1,7 +1,11 @@
  [Desktop Entry]
  Encoding=UTF-8
- Name=kamix
-+Name[pl]=kamix
- Exec=kamix
- Icon=kamix
+ Name=kalsamix
++Name[pl]=kalsamix
+ Exec=kalsamix
+ Icon=kalsamix
  Type=Application
  Comment=An ALSA mixer for KDE
 +Comment[pl]=Mikser ALSA dla KDE
