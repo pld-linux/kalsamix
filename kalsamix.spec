@@ -1,12 +1,13 @@
+%define		_rel		beta2
 Summary:	An ALSA mixer for KDE
 Summary(pl.UTF-8):	Mikser ALSA dla KDE
-Name:		kamix
-Version:	0.6.5
-Release:	1
+Name:		kalsamix
+Version:	1.0.0
+Release:	0.%{_rel}.1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://dl.sourceforge.net/kamix/%{name}-%{version}.tar.bz2
-# Source0-md5:	d73930700aca9a81020db45c65002111
+Source0:	http://dl.sourceforge.net/kalsamix/%{name}-%{version}%{_rel}.tar.gz
+# Source0-md5:	f81ba7798ce887b92c3a07ecfc879df4
 Patch0:		%{name}-desktop.patch
 URL:		http://kamix.sourceforge.net/
 BuildRequires:	autoconf
@@ -24,8 +25,8 @@ Mikser dżwięku dla KDE 3 i ALSY, posiadający możliwości, w które kmix
 jest ubogi.
 
 %prep
-%setup -q -n %{name}
-%patch0 -p1
+%setup -q -n %{name}-%{version}%{_rel}
+#%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.* admin
@@ -55,10 +56,10 @@ mv -f $RPM_BUILD_ROOT%{_datadir}/applnk/Utilities/*.desktop \
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f kamix.lang
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc README AUTHORS ChangeLog TODO
-%attr(755,root,root) %{_bindir}/kamix
-%{_datadir}/apps/kamix
+%attr(755,root,root) %{_bindir}/%{name}
+%{_datadir}/apps/%{name}
 %{_iconsdir}/hicolor/*/*/*
 %{_desktopdir}/*.desktop
